@@ -7,7 +7,7 @@
 - **module** (string): Module name (e.g., "EmailProcessing") or "System" for system-wide issues
 - **date** (string): ISO 8601 date (YYYY-MM-DD)
 - **problem_type** (enum): One of [build_error, test_failure, runtime_error, performance_issue, database_issue, security_issue, ui_bug, integration_issue, logic_error, developer_experience, workflow_issue, best_practice, documentation_gap]
-- **component** (enum): One of [rails_model, rails_controller, rails_view, service_object, background_job, database, frontend_stimulus, hotwire_turbo, email_processing, brief_system, assistant, authentication, payments, development_workflow, testing_framework, documentation, tooling]
+- **component** (enum): Rails projects: `rails_model`, `rails_controller`, `rails_view`, `service_object`, `background_job`, `database`, `frontend_stimulus`, `hotwire_turbo`, `email_processing`, `brief_system`, `assistant`, `authentication`, `payments`, `development_workflow`, `testing_framework`, `documentation`, `tooling` — Phoenix/Elixir projects: `phoenix_layout`, `phoenix_liveview`, `phoenix_controller`, `phoenix_component`, `elixir_context`, `ecto_schema` — Browser extension: `chrome_extension`
 - **symptoms** (array): 1-5 specific observable symptoms
 - **root_cause** (enum): One of [missing_association, missing_include, missing_index, wrong_api, scope_issue, thread_violation, async_timing, memory_leak, config_error, logic_error, test_isolation, missing_validation, missing_permission, missing_workflow_step, inadequate_documentation, missing_tooling, incomplete_setup]
 - **resolution_type** (enum): One of [code_fix, migration, config_change, test_fix, dependency_update, environment_setup, workflow_improvement, documentation_update, tooling_addition, seed_data_update]

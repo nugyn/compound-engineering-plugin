@@ -37,6 +37,7 @@ required_fields:
   component:
     type: enum
     values:
+      # Rails components
       - rails_model          # ActiveRecord models
       - rails_controller     # ActionController
       - rails_view           # ERB templates, ViewComponent
@@ -48,13 +49,21 @@ required_fields:
       - email_processing     # Email handling, mailers
       - brief_system         # Brief generation, summarization
       - assistant            # AI assistant, prompts
-      - authentication       # Devise, user auth
+      - authentication       # Devise / phx_gen_auth, user auth
       - payments             # Stripe, billing
       - development_workflow # Dev process, seed data, tooling
       - testing_framework    # Test setup, fixtures, VCR
       - documentation        # README, guides, inline docs
       - tooling              # Scripts, generators, CLI tools
-    description: "CORA component involved"
+      # Phoenix / Elixir components
+      - phoenix_layout       # layouts.ex, root.html.heex, layout HEEX templates
+      - phoenix_liveview     # LiveView modules (mount, handle_event, handle_info)
+      - phoenix_controller   # Traditional Phoenix controllers
+      - phoenix_component    # Phoenix.Component function components (core_components.ex)
+      - elixir_context       # Ecto context modules (business logic layer)
+      - ecto_schema          # Ecto schemas, changesets, migrations
+      - chrome_extension     # Browser extension (WXT, content scripts, service workers)
+    description: "Component involved — use Rails prefixed values for Rails projects, phoenix_ / elixir_ / chrome_ prefixed for Phoenix/Elixir/Extension projects"
 
   symptoms:
     type: array[string]
