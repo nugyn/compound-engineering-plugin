@@ -5,6 +5,15 @@ All notable changes to the compound-engineering plugin will be documented in thi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.35.0] - 2026-02-20
+
+### Added
+
+- **`elixir-phoenix-style` skill** - Idiomatic Elixir/Phoenix patterns for contexts, Ecto schemas/changesets, LiveView, OTP, REST API, and ExUnit testing. Six reference files covering real production patterns.
+- **`jose-elixir-reviewer` agent** - Elixir code review from José Valim's perspective (functional programming, BEAM philosophy, OTP patterns, Ecto idioms).
+
+---
+
 ## [2.34.0] - 2026-02-14
 
 ### Added

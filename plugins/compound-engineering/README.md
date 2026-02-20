@@ -6,9 +6,9 @@ AI-powered development tools that get smarter with every use. Make each unit of 
 
 | Component | Count |
 |-----------|-------|
-| Agents | 29 |
+| Agents | 30 |
 | Commands | 22 |
-| Skills | 19 |
+| Skills | 20 |
 | MCP Servers | 1 |
 
 ## Agents
@@ -26,6 +26,7 @@ Agents are organized into categories for easier discovery.
 | `data-migration-expert` | Validate ID mappings match production, check for swapped values |
 | `deployment-verification-agent` | Create Go/No-Go deployment checklists for risky data changes |
 | `dhh-rails-reviewer` | Rails review from DHH's perspective |
+| `jose-elixir-reviewer` | Elixir code review from José Valim's perspective |
 | `julik-frontend-races-reviewer` | Review JavaScript/Stimulus code for race conditions |
 | `kieran-rails-reviewer` | Rails code review with strict conventions |
 | `kieran-python-reviewer` | Python code review with strict conventions |
@@ -121,6 +122,7 @@ Core workflow commands use `workflows:` prefix to avoid collisions with built-in
 | `compound-docs` | Capture solved problems as categorized documentation |
 | `create-agent-skills` | Expert guidance for creating Claude Code skills |
 | `dhh-rails-style` | Write Ruby/Rails code in DHH's 37signals style |
+| `elixir-phoenix-style` | Write Elixir/Phoenix code with idiomatic OTP, Ecto, and LiveView patterns |
 | `dspy-ruby` | Build type-safe LLM applications with DSPy.rb |
 | `frontend-design` | Create production-grade frontend interfaces |
 | `skill-creator` | Guide for creating effective Claude Code skills |
